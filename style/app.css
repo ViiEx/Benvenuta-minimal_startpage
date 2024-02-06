@@ -1,61 +1,60 @@
-
-:root{
-/* catppuccin */
-/* --main-bg:#11111b; */
-/* --main-bg2:#181825; */
-/* --main-fg:#b4befe; */
-/* --main-fg2:#cba6f7; */
-/* rosepine */
-/* --main-bg:#191724; */
-/* --main-bg2:#1f1d2e; */
-/* --main-fg:#e0def4; */
-/* --main-fg2:#eb6f92; */
-/* dracula */
-/* --main-bg:#282a36; */
-/* --main-bg2:#44475a; */
-/* --main-fg:#f8f8f2; */
-/* --main-fg2:#ff79c6; */
-/* gruvbox */
-/* --main-bg:#282828; */
-/* --main-bg2:#3c3836;  */
-/* --main-fg:#ebdbb2;   */
-/* --main-fg2:#d65d0e;   */
-/* tokyonight */
---main-bg:#1a1b26;  
---main-bg2:#1f2335;  
---main-fg:#c0caf5;  
---main-fg2:#7dcfff;  
-/* nord */
-/* --main-bg:#2e3440;    */
-/* --main-bg2:#3b4252; */
-/* --main-fg:#eceff4; */
-/* --main-fg2:#88c0d0; */
-/* Decay-Green */ 
-/* --main-bg:#0f0f0f; */
-/* --main-bg2:#1a1a1a; */
-/* --main-fg:#b4b4b4; */
-/* --main-fg2:#00ff00; */
-};
-
-* {
-  font-family: 'Fira Code', Courier, monospace;
-  padding: 0;
-  margin: 0;  
-  font-size: 21px;  
+:root {
+  /* catppuccin */
+  /* --main-bg:#11111b; */
+  /* --main-bg2:#181825; */
+  /* --main-fg:#b4befe; */
+  /* --main-fg2:#cba6f7; */
+  /* rosepine */
+  /* --main-bg:#191724; */
+  /* --main-bg2:#1f1d2e; */
+  /* --main-fg:#e0def4; */
+  /* --main-fg2:#eb6f92; */
+  /* dracula */
+  /* --main-bg:#282a36; */
+  /* --main-bg2:#44475a; */
+  /* --main-fg:#f8f8f2; */
+  /* --main-fg2:#ff79c6; */
+  /* gruvbox */
+  /* --main-bg:#282828; */
+  /* --main-bg2:#3c3836;  */
+  /* --main-fg:#ebdbb2;   */
+  /* --main-fg2:#d65d0e;   */
+  /* tokyonight */
+  --main-bg: #1a1b26;
+  --main-bg2: #1f2335;
+  --main-fg: #c0caf5;
+  --main-fg2: #7dcfff;
+  /* nord */
+  /* --main-bg:#2e3440;    */
+  /* --main-bg2:#3b4252; */
+  /* --main-fg:#eceff4; */
+  /* --main-fg2:#88c0d0; */
+  /* Decay-Green */
+  /* --main-bg:#0f0f0f; */
+  /* --main-bg2:#1a1a1a; */
+  /* --main-fg:#b4b4b4; */
+  /* --main-fg2:#00ff00; */
 }
 
-.main{
+* {
+  font-family: "Fira Code", Courier, monospace;
+  padding: 0;
+  margin: 0;
+  font-size: 21px;
+}
+
+.main {
   display: flex;
-  flex-direction: column;    
+  flex-direction: column;
   align-items: center;
 }
 
-body{
+body {
   width: 100vw;
   height: 100vh;
   color: var(--main-fg);
-  margin:0;
-  background-color:var(--main-bg);
+  margin: 0;
+  background-color: var(--main-bg);
 }
 
 #time,
@@ -71,7 +70,7 @@ body{
 }
 
 #time,
-#date{
+#date {
   font-size: 2.5em;
 }
 
@@ -108,22 +107,23 @@ body{
   background-color: var(--main-bg2);
 }
 
-hr{
+hr {
   width: 60%;
   display: block;
-  border: 1px solid  var(--main-fg2);
+  border: 1px solid var(--main-fg2);
   border-radius: 4px;
 }
-::placeholder { 
+::placeholder {
   color: var(--main-fg);
-  opacity: 0.75; 
+  opacity: 0.75;
 }
 
 .tsb {
   outline: none;
   border: none;
-  background-color:var(--main-bg2);
+  background-color: var(--main-bg2);
   font-size: 18px;
+  color: var(--main-fg);
 }
 
 .button {
@@ -142,20 +142,24 @@ hr{
   background-color: var(--main-bg2);
   color: var(--main-fg);
   font-size: 18px;
-} 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 a {
   text-decoration: none;
+  font-family: "Fira Code", Courier, monospace;
   color: var(--main-fg);
 }
 
 .table_button:hover,
-a:hover{
+a:hover {
   color: var(--main-bg2);
-  transition: 0.0s;
+  transition: 0s;
 }
 
-.button_bar{
+.button_bar {
   display: flex;
   justify-content: center;
 }
@@ -170,9 +174,9 @@ a:hover{
   padding: 5px;
   margin-top: 15px;
   width: 250px;
- }
+}
 
-#m1{
+#m1 {
   margin-right: 100px;
 }
 
@@ -181,30 +185,30 @@ td {
   padding: 10px;
   border-radius: 10px;
   text-align: center;
- }
+}
 
 .flx {
   display: flex;
   justify-content: center;
   align-items: center;
- }
+}
 
-.table_button{
-   background: var(--main-bg2);
-   width: 125px;
-   border: none;
-   border-radius: 50px;
-   margin: 5px;
-   color: var(--main-fg);
+.table_button {
+  background: var(--main-bg2);
+  width: 125px;
+  border: none;
+  border-radius: 50px;
+  margin: 5px;
+  color: var(--main-fg);
 }
 
 .table_button:hover,
-td:hover{
+td:hover {
   background: var(--main-fg2);
   transition: 0.5s;
 }
 
- .button_div {
+.button_div {
   background: var(--main-bg2);
   margin-top: 10px;
   display: flex;
@@ -216,16 +220,16 @@ td:hover{
 }
 
 @media screen and (max-width: 600px) {
-.button_bar,
-.flx,
-#greeting,
-  hr{
+  .button_bar,
+  .flx,
+  #greeting,
+  hr {
     visibility: hidden;
   }
   .tm,
-  .mm { 
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
+  .mm {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
